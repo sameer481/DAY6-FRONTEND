@@ -2,7 +2,6 @@ import React from 'react';
 
 /**
  * Simple table that lists common HTML5 semantic elements and a one‑line description.
- * This can be used anywhere you want a quick reference for developers.
  */
 export default function SemanticElementsInfo() {
   const rows = [
@@ -40,4 +39,3 @@ export default function SemanticElementsInfo() {
     </div>
   );
 }
-
