@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Box Model Demo</title>
+  <link rel="stylesheet" href="boxmodel.css" />
+  <style>
+    /* Inline fallback in case CSS file fails to load */
+  </style>
+</head>
+<body>
+  <h1>CSS Box Model – Theory &amp; Live Demo</h1>
+  <section class="theory">
+    <h2>What is the Box Model?</h2>
+    <p>The CSS Box Model describes how the size of an element is calculated and how it interacts with surrounding elements.
+    Every element is represented as a rectangular box consisting of four regions (from the inside out):</p>
+    <ol>
+      <li><strong>Content</strong> – the actual text, image, or other media.</li>
+      <li><strong>Padding</strong> – space between the content and the border.</li>
+      <li><strong>Border</strong> – a line that wraps the padding and content.</li>
+      <li><strong>Margin</strong> – the outermost space that separates the element from its neighbours.</li>
+    </ol>
+    <p>Understanding the Box Model is essential for layout, spacing, and visual consistency.</p>
+  </section>
+
+  <section class="demo">
+    <h2>Live Demo</h2>
+    <div class="box content-box">
+      Content Box<br/>(no padding, border or margin)
+    </div>
+    <div class="box padding-box">
+      Padding Box<br/>(padding only)
+    </div>
+    <div class="box border-box">
+      Border Box<br/>(border + padding)
+    </div>
+    <div class="box margin-box">
+      Margin Box<br/>(margin + border + padding)
+    </div>
+  </section>
+</body>
+</html>
+

@@ -1,0 +1,66 @@
+/*
+  CSS Box Model Demo Styles
+  This stylesheet visualises the four parts of the CSS box model:
+  content, padding, border, and margin.
+*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+.box {
+  width: 180px;
+  height: 100px;
+  background-color: #cce5ff;
+  color: #033;
+  text-align: center;
+  line-height: 1.2;
+  margin: 10px auto; /* center horizontally */
+}
+
+/* Content Box – only content area, no padding/border/margin (except auto centering margin) */
+.content-box {
+  /* default box-sizing: content-box */
+}
+
+/* Padding Box – adds padding to the content */
+.padding-box {
+  padding: 20px;          /* adds space inside the box */
+  background-color: #99ccff;
+}
+
+/* Border Box – adds border (and inherits padding) */
+.border-box {
+  padding: 15px;
+  border: 5px solid #0066cc;
+  background-color: #66b3ff;
+}
+
+/* Margin Box – adds margin outside the border */
+.margin-box {
+  padding: 10px;
+  border: 4px solid #004c99;
+  margin: 30px auto; /* extra outer space */
+  background-color: #3399ff;
+}
+
+/* Optional visual aid – show the outline of each area */
+.content-box,
+.padding-box,
+.border-box,
+.margin-box {
+  outline: 1px dashed #555;
+}
+
